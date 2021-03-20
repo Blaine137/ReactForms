@@ -1,0 +1,34 @@
+.selectForm{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.formGroup{
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.Label{
+    margin-bottom: 1rem;
+}
+
+.input{
+    width: 100%;
+    padding: 0;
+    height: 4vh;
+}
+
+.select{
+    width: 100%;
+    height: 4vh;
+}
