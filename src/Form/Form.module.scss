@@ -1,21 +1,20 @@
 .selectForm{
-    height: 50vh;
+    height: 75vh;
     display: grid;
-    grid-template-columns: 200px;
     align-items: center;
     justify-content: center;
     background-color: lightgray;
 }
 
-.fieldset{
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-
-.formGroup{
+.formGroup, .selectFormGroup{
     text-align: left;
     margin: 1rem 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.selectFormGroup{
+  position: relative;
 }
 
 .Label{
@@ -30,5 +29,53 @@
 
 .select{
     width: 100%;
-    height: 4vh;
+    height: 9vh;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: lightslategray;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow{
+  background: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 4rem;
+  pointer-events: none; /*makes the click on the select element under the arrow*/
+  &::before{
+    --size: 0.65rem;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid lightslategray;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+  &::after{
+    --size: 0.65rem;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid lightslategray;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.submit{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
