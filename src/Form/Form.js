@@ -52,6 +52,19 @@ const Form = props => {
                     </select>
                     <span className={styles.arrow}></span>
                 </div>
+
+                <div className={styles.selectFormGroup}>
+                    <select name="computers" id="computers" className={styles.select2}>
+                        <option value="0">choose a computer</option>
+                        <option value="Dell">Dell</option>
+                        <option value="Apple">Apple (iMac)</option>
+                        <option value="Razer">Razer</option>
+                        <option value="Asus">Asus</option>
+                    </select>
+                    <div className={styles.arrowContainer}>
+                        <span className={styles.arrow2}></span>
+                    </div>
+                </div>
           
             <button type="submit" aria-label="button to submit form" className={styles.submit}>Submit</button>
         </form>
