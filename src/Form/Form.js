@@ -14,16 +14,18 @@ const Form = props => {
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.." className={styles.input}/>
                 </div>
 
-                <div className={styles.formGroup}>
+                <div className={styles.radioFormGroup}>
                     <h4>Subscribe</h4>
-                    <label class="container">Yes
-                        <input type="checkbox" checked="checked"/>
-                        <span class="checkmark"></span>
+                    <label className={styles.radioBtn}>
+                        <input type="radio" checked="checked"/>
+                        <span className={styles.checkmark}></span>
                     </label>
-                    <label class="container">No
-                        <input type="checkbox"/>
-                        <span class="checkmark"></span> 
+                    Yes
+                    <label className={styles.radioBtn}>
+                        <input type="radio"/>
+                        <span className={styles.checkmark}></span> 
                     </label>
+                    No
                 </div>
                 
                 <div className={styles.selectFormGroup}>

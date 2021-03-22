@@ -6,16 +6,18 @@
     background-color: lightgray;
 }
 
-.formGroup, .selectFormGroup{
+.formGroup, .selectFormGroup, .radioFormGroup{
     text-align: left;
     margin: 1rem 0;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-.selectFormGroup{
+.selectFormGroup, .radioFormGroup{
   position: relative;
 }
+
+
 
 .Label{
     margin-bottom: 1rem;
@@ -25,6 +27,25 @@
     width: 100%;
     padding: 0;
     height: 4vh;
+}
+
+.radioBtn{
+  border: 2px solid lightslategray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.radioBtn .checkmark{
+  width: 5px;
+  height: 5px;
+  display: none;
+  background-color: lightslategray;
+}
+
+.radioBtn input:checked + .checkmark{
+  display: inline-block;
 }
 
 .select{
