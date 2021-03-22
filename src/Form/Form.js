@@ -17,12 +17,12 @@ const Form = props => {
                 <div className={styles.radioFormGroup}>
                     <h4>Subscribe</h4>
                     <label className={styles.radioBtn}>
-                        <input type="radio" checked="checked"/>
+                        <input type="checkbox"/>
                         <span className={styles.checkmark}></span>
                     </label>
                     Yes
                     <label className={styles.radioBtn}>
-                        <input type="radio"/>
+                        <input type="checkbox"/>
                         <span className={styles.checkmark}></span> 
                     </label>
                     No
