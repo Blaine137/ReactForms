@@ -27,6 +27,20 @@ const Form = props => {
                     </label>
                     No
                 </div>
+
+                <div className={styles.radioFormGroup}>
+                    <h4>payment</h4>
+                    <label className={styles.radioBtn2}>
+                        <input type="checkbox"/>
+                        <span className={styles.checkmark2}></span>
+                    </label>
+                    Debit card
+                    <label className={styles.radioBtn2}>
+                        <input type="checkbox"/>
+                        <span className={styles.checkmark2}></span> 
+                    </label>
+                    paypal
+                </div>
                 
                 <div className={styles.selectFormGroup}>
                     <select name="computers" id="computers" className={styles.select}>
