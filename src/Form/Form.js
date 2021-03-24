@@ -2,8 +2,9 @@ import styles from './Form.module.scss';
 
 const Form = props => {
     return ( 
-        <form className={styles.selectForm}>
-            
+        <>
+            <form className={styles.selectForm}>
+    
                 <div className={styles.formGroup}>
                     <label for="fname" className={styles.Label}>First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.." className={styles.input}/>
@@ -65,9 +66,25 @@ const Form = props => {
                         <span className={styles.arrow2}></span>
                     </div>
                 </div>
-          
-            <button type="submit" aria-label="button to submit form" className={styles.submit}>Submit</button>
-        </form>
+        
+                <button type="submit" aria-label="button to submit form" className={styles.submit}>Submit</button>
+            </form>
+            <form className={styles.loginForm}>
+                <h4>Sign In</h4>
+                <div className={styles.formgroup}>
+                    <label htmlFor="email" className={styles.loginLabel}>
+                        Email
+                    </label>
+                    <input id="email" name="email" type="text" styles={styles.loginInput}/>
+                </div>
+                <div className={styles.formgroup}>
+                    <label htmlFor="password" className={styles.loginLabel}>
+                        Password
+                    </label>
+                    <input id="password" name="password" type="password" styles={styles.loginInput}/>
+                </div>
+            </form>
+        </>
      );
 }
  
