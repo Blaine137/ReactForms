@@ -71,17 +71,24 @@ const Form = props => {
             </form>
             <form className={styles.loginForm}>
                 <h4>Sign In</h4>
-                <div className={styles.formgroup}>
+                <div className={styles.loginFormGroup}>
                     <label htmlFor="email" className={styles.loginLabel}>
                         Email
                     </label>
-                    <input id="email" name="email" type="text" styles={styles.loginInput}/>
+                    <input id="email" name="email" type="text" className={styles.loginInput} autocomplete="off"/>
                 </div>
-                <div className={styles.formgroup}>
+                <div className={styles.loginFormGroup}>
                     <label htmlFor="password" className={styles.loginLabel}>
                         Password
                     </label>
-                    <input id="password" name="password" type="password" styles={styles.loginInput}/>
+                    <input id="password" name="password" type="password" className={styles.loginInput} autocomplete="off"/>
+                </div>
+                <div className={styles.radioFormGroup}>
+                    <label>
+                        <input type="checkbox" className={styles.loginCheckboxInput}/>
+                        <span className={styles.loginCheckbox}></span>
+                    </label>
+                    Remember this device
                 </div>
             </form>
         </>
