@@ -84,7 +84,7 @@ const Form = props => {
                     <input id="password" name="password" type="password" className={styles.loginInput} autocomplete="off"/>
                 </div>
                 <div className={styles.radioFormGroup}>
-                    <label>
+                    <label className={styles.loginLabel}>
                         <input type="checkbox" className={styles.loginCheckboxInput}/>
                         <span className={styles.loginCheckbox}></span>
                     </label>

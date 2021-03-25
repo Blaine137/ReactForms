@@ -251,10 +251,35 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: red; /*REMOVE THIS STYLE ONCE YOU GET THE CORRECT PIXEL SIZE*/
+    margin-right: .5rem;
   }
   input[type=checkbox]{
     opacity: 0;
   }
+
 }
 
+.loginCheckbox{
+    background-color: white;
+    border: 1px solid #757579;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.loginLabel input:checked ~ .loginCheckbox{
+  display: inline-block;
+}
+
+/* On mouse-over, add a grey background color */
+.loginLabel:hover input ~ .loginCheckbox {
+  cursor: pointer;
+}
+
+/* When the checkbox is checked, add a blue background */
+.loginLabel input:checked ~ .loginCheckbox {
+  background-color: #757579;
+}
