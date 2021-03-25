@@ -90,6 +90,9 @@ const Form = props => {
                     </label>
                     Remember this device
                 </div>
+                <div className={styles.radioFormGroup}>
+                    <button className={styles.loginSubmit} aria-label="button to submit login form" type="submit">Sign in</button>
+                </div>
             </form>
         </>
      );

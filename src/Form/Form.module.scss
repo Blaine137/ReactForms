@@ -252,6 +252,7 @@
     width: 20px;
     height: 20px;
     margin-right: .5rem;
+    font-weight: bold;
   }
   input[type=checkbox]{
     opacity: 0;
@@ -282,4 +283,17 @@
 /* When the checkbox is checked, add a blue background */
 .loginLabel input:checked ~ .loginCheckbox {
   background-color: #757579;
+}
+
+.loginSubmit{
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: .5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #0A8080;
+  color: white;
+  &:hover{
+    cursor: pointer;
+  }
 }
