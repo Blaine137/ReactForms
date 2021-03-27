@@ -229,6 +229,9 @@
     box-sizing: border-box;
     border: 1px solid #757579;
   }
+  h4{
+    color: #0A8080;
+  }
 }
 
 .loginFormGroup{
@@ -302,7 +305,7 @@
   }
 }
 
-@media (min-width: 704px){
+@media (min-width: 750px){
   .loginForm{
     width: 50vw;
   }
