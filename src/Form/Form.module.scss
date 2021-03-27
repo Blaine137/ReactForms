@@ -234,6 +234,8 @@
 .loginFormGroup{
   width: 50%;
   margin: 0 auto;
+  border: none;
+  padding: 0;
 }
 
 .loginInput{
@@ -247,6 +249,8 @@
   margin: 0 auto;
   text-align: left;
   position: relative;
+  border: none;
+  padding: 0;
   .loginLabel{
     display: inline-block;
     width: 20px;
