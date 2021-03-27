@@ -80,7 +80,6 @@ const Form = props => {
                 <div className={styles.loginFormGroup}>
                     <label htmlFor="password" className={styles.loginLabel}>
                         Password
-                        <span className={styles.forgotPassword}>Forgot your password?</span>
                     </label>
                     <input id="password" name="password" type="password" className={styles.loginInput} autoComplete="off"/>
                 </div>

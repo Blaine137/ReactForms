@@ -213,7 +213,7 @@
 
 .loginForm{
   height: 50vh;
-  width: 50vw;
+  width: 95vw;
   margin: 0 auto;
   label{
     display: block;
@@ -260,14 +260,6 @@
 
 }
 
-.forgotPassword{
-  color: #0A8080;
-  display: inline-block;
-  text-align: right;
-  width: 80%;
-  cursor: pointer;
-}
-
 .loginCheckbox{
     background-color: white;
     border: 1px solid #757579;
@@ -303,5 +295,11 @@
   color: white;
   &:hover{
     cursor: pointer;
+  }
+}
+
+@media (min-width: 704px){
+  .loginForm{
+    width: 50vw;
   }
 }
